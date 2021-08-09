@@ -19,8 +19,15 @@ const List = ({ countries }) => {
         <React.Fragment>
 
             <table>
-                <td>{listComponent}</td>
+                <tr>
+                    <th className='ph4'>Name</th>
+                    <th className='ph3'>Captial</th>
+                    <th className='ph3'>Sub Region</th>
+                    <th className='ph3'>Population</th>
+                </tr>
             </table>
+            
+            {listComponent}
 
             <CounTable name={countries[0].name} capital={countries[0].capital} subregion={countries[0].subregion} population={countries[0].population}/>
 
